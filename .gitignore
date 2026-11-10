@@ -2,6 +2,8 @@ node_modules/
 artifacts/
 cache/
 coverage/
+.ganache/
+*.log
 .env
 .env.*
 !.env.example

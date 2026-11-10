@@ -1,0 +1,20 @@
+{
+  "name": "solidity-smart-contracts-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "ganache": "ganache --server.host 127.0.0.1 --server.port 7545 --chain.chainId 1337 --chain.hardfork merge --database.dbPath .ganache --logging.quiet",
+    "check:ganache": "node scripts/check-ganache.js",
+    "deploy:ganache": "node scripts/deploy.js",
+    "deploy:storage": "node scripts/deploy-storage.js",
+    "test:ganache": "hardhat test --network ganache"
+  },
+  "devDependencies": {
+    "hardhat": "2.29.1",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "ethers": "^6.15.0",
+    "ganache": "7.9.2"
+  }
+}
